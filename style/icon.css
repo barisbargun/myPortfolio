@@ -1,0 +1,100 @@
+.iconList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconList li {
+    list-style: none;
+}
+
+.iconList li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+
+.iconList li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.iconLin::before {
+    background: #4fc3f7;
+}
+
+.iconLin:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4fc3f7;
+}
+
+.iconLin:hover {
+    color: #4fc3f7;
+    box-shadow: 0 0 15px #4fc3f7;
+    text-shadow: 0 0 5px #4fc3f7;
+}
+
+
+.iconFb::before {
+    background: #1e88e5;
+}
+
+.iconFb:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #1e88e5;
+}
+
+.iconFb:hover {
+    color: #1e88e5;
+    box-shadow: 0 0 15px #1e88e5;
+    text-shadow: 0 0 5px #1e88e5;
+}
+
+
+.iconTwt::before {
+    background: #80d8ff;
+}
+
+.iconTwt:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #80d8ff;
+}
+
+.iconTwt:hover {
+    color: #80d8ff;
+    box-shadow: 0 0 15px #80d8ff;
+    text-shadow: 0 0 5px #80d8ff;
+}
+
+
+.iconIg::before {
+    background: #ef5350;
+}
+
+.iconIg:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ef5350;
+}
+
+.iconIg:hover {
+    color: #ef5350;
+    box-shadow: 0 0 15px #ef5350;
+    text-shadow: 0 0 5px #ef5350;
+}
